@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.areweb.com.cn/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.areweb.com.cn/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">服务说明：多证合一综合业务服务平台数据访问接口 ( By Ysl 2016/07/07 ) </wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.areweb.com.cn/">
+      <s:element name="ValidateUsers">
+        <s:complexType />
+      </s:element>
+      <s:element name="ValidateUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateUsersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthHeaderCS" type="tns:AuthHeaderCS" />
+      <s:complexType name="AuthHeaderCS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginAcc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPwd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginIP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KeyValue" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="ValidateByKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateByKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateByKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCltClose">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCltCloseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPrintDataVal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="funcNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPrintDataValResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPrintDataValResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPrintRec">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="funcNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPrintRecResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPrintRecResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionExec">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aryList" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TransactionExecResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionExecResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataSetByProc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataSetByProcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataSetByProcResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSyncInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="tns:ClientInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClientInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSyncInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSyncInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSyncInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sParams" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="tns:ClientInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSyncInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetSyncInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCardInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aryVal" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="tns:ClientInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetCardInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetCardInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSinleValue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSinleValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSinleValueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateAccounts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="tns:ClientInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateAccountsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateAccountsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadFiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fs" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="Params" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CI" type="tns:ClientInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadFilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpLoadFilesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSvrsDatePath">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSvrsDatePathResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSvrsDatePathResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateUsers" />
+  </wsdl:message>
+  <wsdl:message name="ValidateUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateUsersAuthHeaderCS">
+    <wsdl:part name="AuthHeaderCS" element="tns:AuthHeaderCS" />
+  </wsdl:message>
+  <wsdl:message name="ValidateByKeySoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateByKey" />
+  </wsdl:message>
+  <wsdl:message name="ValidateByKeySoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetCltCloseSoapIn">
+    <wsdl:part name="parameters" element="tns:SetCltClose" />
+  </wsdl:message>
+  <wsdl:message name="SetCltCloseSoapOut">
+    <wsdl:part name="parameters" element="tns:SetCltCloseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPrintDataValSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPrintDataVal" />
+  </wsdl:message>
+  <wsdl:message name="GetPrintDataValSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPrintDataValResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPrintRecSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPrintRec" />
+  </wsdl:message>
+  <wsdl:message name="SetPrintRecSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPrintRecResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionExecSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionExec" />
+  </wsdl:message>
+  <wsdl:message name="TransactionExecSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionExecResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataSetByProcSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataSetByProc" />
+  </wsdl:message>
+  <wsdl:message name="GetDataSetByProcSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataSetByProcResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSyncInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSyncInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetSyncInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSyncInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetSyncInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSyncInfo" />
+  </wsdl:message>
+  <wsdl:message name="SetSyncInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSyncInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetCardInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SetCardInfo" />
+  </wsdl:message>
+  <wsdl:message name="SetCardInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SetCardInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSinleValueSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSinleValue" />
+  </wsdl:message>
+  <wsdl:message name="GetSinleValueSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSinleValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateAccountsSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateAccounts" />
+  </wsdl:message>
+  <wsdl:message name="ValidateAccountsSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateAccountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadFilesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpLoadFiles" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadFilesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpLoadFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSvrsDatePathSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSvrsDatePath" />
+  </wsdl:message>
+  <wsdl:message name="GetSvrsDatePathSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSvrsDatePathResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DALSvrsSoap">
+    <wsdl:operation name="ValidateUsers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ValidateUsers：通过SOAP标头进行身份验证</wsdl:documentation>
+      <wsdl:input message="tns:ValidateUsersSoapIn" />
+      <wsdl:output message="tns:ValidateUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateByKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ValidateByKey，uKey登录身份验证。</wsdl:documentation>
+      <wsdl:input message="tns:ValidateByKeySoapIn" />
+      <wsdl:output message="tns:ValidateByKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCltClose">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">SetCltClose，关闭客户端。</wsdl:documentation>
+      <wsdl:input message="tns:SetCltCloseSoapIn" />
+      <wsdl:output message="tns:SetCltCloseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintDataVal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取打印数据</wsdl:documentation>
+      <wsdl:input message="tns:GetPrintDataValSoapIn" />
+      <wsdl:output message="tns:GetPrintDataValSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPrintRec">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设置打印记录</wsdl:documentation>
+      <wsdl:input message="tns:SetPrintRecSoapIn" />
+      <wsdl:output message="tns:SetPrintRecSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionExec">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">事务处理</wsdl:documentation>
+      <wsdl:input message="tns:TransactionExecSoapIn" />
+      <wsdl:output message="tns:TransactionExecSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSetByProc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过存储过程调用获取数据集</wsdl:documentation>
+      <wsdl:input message="tns:GetDataSetByProcSoapIn" />
+      <wsdl:output message="tns:GetDataSetByProcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">从服务器获取数据集</wsdl:documentation>
+      <wsdl:input message="tns:GetSyncInfoSoapIn" />
+      <wsdl:output message="tns:GetSyncInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSyncInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">向服务器更新同步数据</wsdl:documentation>
+      <wsdl:input message="tns:SetSyncInfoSoapIn" />
+      <wsdl:output message="tns:SetSyncInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCardInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设置客户端采集的身份卡信息</wsdl:documentation>
+      <wsdl:input message="tns:SetCardInfoSoapIn" />
+      <wsdl:output message="tns:SetCardInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSinleValue">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取单个值</wsdl:documentation>
+      <wsdl:input message="tns:GetSinleValueSoapIn" />
+      <wsdl:output message="tns:GetSinleValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateAccounts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ValidateAccounts，前向用户身份验证</wsdl:documentation>
+      <wsdl:input message="tns:ValidateAccountsSoapIn" />
+      <wsdl:output message="tns:ValidateAccountsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFiles">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">UpLoadFiles，上传图片等文件数据。</wsdl:documentation>
+      <wsdl:input message="tns:UpLoadFilesSoapIn" />
+      <wsdl:output message="tns:UpLoadFilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSvrsDatePath">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GetSvrsDatePath，从服务器获取日期路径。</wsdl:documentation>
+      <wsdl:input message="tns:GetSvrsDatePathSoapIn" />
+      <wsdl:output message="tns:GetSvrsDatePathSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DALSvrsSoap" type="tns:DALSvrsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateUsers">
+      <soap:operation soapAction="http://www.areweb.com.cn/ValidateUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ValidateUsersAuthHeaderCS" part="AuthHeaderCS" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateByKey">
+      <soap:operation soapAction="http://www.areweb.com.cn/ValidateByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCltClose">
+      <soap:operation soapAction="http://www.areweb.com.cn/SetCltClose" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintDataVal">
+      <soap:operation soapAction="http://www.areweb.com.cn/GetPrintDataVal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPrintRec">
+      <soap:operation soapAction="http://www.areweb.com.cn/SetPrintRec" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionExec">
+      <soap:operation soapAction="http://www.areweb.com.cn/TransactionExec" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSetByProc">
+      <soap:operation soapAction="http://www.areweb.com.cn/GetDataSetByProc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncInfo">
+      <soap:operation soapAction="http://www.areweb.com.cn/GetSyncInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSyncInfo">
+      <soap:operation soapAction="http://www.areweb.com.cn/SetSyncInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCardInfo">
+      <soap:operation soapAction="http://www.areweb.com.cn/SetCardInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSinleValue">
+      <soap:operation soapAction="http://www.areweb.com.cn/GetSinleValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateAccounts">
+      <soap:operation soapAction="http://www.areweb.com.cn/ValidateAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFiles">
+      <soap:operation soapAction="http://www.areweb.com.cn/UpLoadFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSvrsDatePath">
+      <soap:operation soapAction="http://www.areweb.com.cn/GetSvrsDatePath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DALSvrsSoap12" type="tns:DALSvrsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateUsers">
+      <soap12:operation soapAction="http://www.areweb.com.cn/ValidateUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ValidateUsersAuthHeaderCS" part="AuthHeaderCS" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateByKey">
+      <soap12:operation soapAction="http://www.areweb.com.cn/ValidateByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCltClose">
+      <soap12:operation soapAction="http://www.areweb.com.cn/SetCltClose" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintDataVal">
+      <soap12:operation soapAction="http://www.areweb.com.cn/GetPrintDataVal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPrintRec">
+      <soap12:operation soapAction="http://www.areweb.com.cn/SetPrintRec" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionExec">
+      <soap12:operation soapAction="http://www.areweb.com.cn/TransactionExec" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSetByProc">
+      <soap12:operation soapAction="http://www.areweb.com.cn/GetDataSetByProc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncInfo">
+      <soap12:operation soapAction="http://www.areweb.com.cn/GetSyncInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSyncInfo">
+      <soap12:operation soapAction="http://www.areweb.com.cn/SetSyncInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCardInfo">
+      <soap12:operation soapAction="http://www.areweb.com.cn/SetCardInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSinleValue">
+      <soap12:operation soapAction="http://www.areweb.com.cn/GetSinleValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateAccounts">
+      <soap12:operation soapAction="http://www.areweb.com.cn/ValidateAccounts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFiles">
+      <soap12:operation soapAction="http://www.areweb.com.cn/UpLoadFiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSvrsDatePath">
+      <soap12:operation soapAction="http://www.areweb.com.cn/GetSvrsDatePath" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DALSvrs">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">服务说明：多证合一综合业务服务平台数据访问接口 ( By Ysl 2016/07/07 ) </wsdl:documentation>
+    <wsdl:port name="DALSvrsSoap" binding="tns:DALSvrsSoap">
+      <soap:address location="http://localhost:6430/DALSvrs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DALSvrsSoap12" binding="tns:DALSvrsSoap12">
+      <soap12:address location="http://localhost:6430/DALSvrs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

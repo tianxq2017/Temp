@@ -1,0 +1,212 @@
+﻿@charset "utf-8";
+/* 全局 */
+body {background: #FFF; font-family: "宋体"; color: #333333; font-size: 12px; /*min-width:1024px;*/}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {margin:0; padding:0; cellspacing:0; cellpadding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+input,select,textarea {font-size: 12px;}
+ul,li,ol {list-style-type: none;}
+img {border:0;}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+*html .clearfix {
+	height:1%;
+}
+*+html .clearfix {
+	height:1%;
+}
+
+/* 特有 */
+.clr{clear:both; font-size:0; height:0; line-height:0;}
+.clr10{clear:both; font-size:0; height:10px; line-height:normal;}
+.fl {float: left;}
+.fr {float: right;}
+.va_t{vertical-align:text-top;}
+.va_c{vertical-align: middle;}
+.va_b{vertical-align:text-bottom;}
+.w_auto {width:auto;}
+.h_auto {height:auto;}
+.wh_auto {width:auto; height:auto;}
+
+/* 链接 */
+a {text-decoration: none; color: #333;}
+a:hover {text-decoration: none; color: #FF6600;}
+
+/* header */
+.header_01 {
+	background:#2A9B89;
+	height:50px;
+}
+.header_01 .logo {
+	float:left;
+	padding-right:20px;
+}
+.header_01 .logo a {
+	display:block;
+	background:url(/images/2013_12/logo2.png) no-repeat 20px center;
+	padding-left:70px;
+	height:50px;
+	line-height:50px;
+	font-size:20px;
+	color:#FFFFFF;
+	font-family:"微软雅黑","黑体";
+}
+.header_01 .logo_img {
+	float:left;
+	padding:0 15px;
+}
+.header_01 .tab {
+	float:left;
+	padding-top:16px;
+}
+.header_01 .tab li {
+	float:left;
+	margin:0 1px;
+}
+.header_01 .tab li a {
+	display:block;
+	background:#37AA99;
+	border:1px solid #248677;
+	border-bottom:none;
+	width:90px;
+	height:33px;
+	line-height:33px;
+	text-align:center;
+	font-size:14px;
+	color:#FFFFFF;
+	font-family:"微软雅黑","黑体";
+}
+.header_01 .tab li a:hover, .header_01 .tab li.on a {
+	background:#FFF;
+	border-top:4px solid #248677;
+	color:#2A9B89;
+	font-weight:bold;
+	margin-top:-3px;
+}
+.header_01 .top_nav {
+	float:right;
+	background:#258577;
+	width:260px;
+	height:50px;
+}
+.header_01 .top_nav li {
+	float:left;
+	border-left:1px solid #187364;
+}
+.header_01 .top_nav li a {
+	background:url(/images/2013_12/ico_01.png) no-repeat;
+	_background-image:url(/images/2013_12/ico_01_ie6.gif);
+	display:block;
+	width: 51px;
+	height:50px;
+	/*opacity:0.60; filter:alpha(opacity=60);*/
+}
+.header_01 .top_nav li a:hover {
+	/*opacity:1; filter:alpha(opacity=100);*/
+	background-color:#197264;
+}
+.header_01 .top_nav li.a1 a {
+	background-position:center 12px;
+}
+.header_01 .top_nav li.a2 a {
+	background-position:center -35px;
+}
+.header_01 .top_nav li.a3 a {
+	background-position:center -85px;
+}
+.header_01 .top_nav li.a4 a {
+	background-position:center -135px;
+}
+.header_01 .top_nav li.a5 a {
+	background-position:center -185px;
+}
+.header_01 .top_nav li.a2 {
+	position:relative;
+}
+.header_01 .top_nav li.a2 p {
+	background: #FF6600;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	border:2px solid #FFF;
+	padding:2px;
+	min-width:13px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:11px;
+	border-radius:15px;
+	position: absolute;
+	top:3px;
+	right:-3px;
+}
+.header_02 {
+	text-align:right;
+	padding: 8px 26px 0 0;
+}
+.header_02 span {
+	display:inline-block; *display:inline; zoom:1;
+	padding-left:3px;
+	*padding-left:8px;
+}
+.header_02 a {
+	background:url(/images/2013_12/01/ico_03.gif) no-repeat 0 -60px;
+	display:block;
+	width:11px;
+	height:10px;
+}
+.header_02 a:hover {
+	background-position: 0 -100px;
+}
+.header_02 .a2 a {
+	background-position: 0 -80px;
+}
+.header_02 .a2 a:hover {
+	background-position: 0 -120px;
+}
+
+/*蓝色*/
+/*.header_01 {
+	background:#3399CC;
+}
+.header_01 .tab li a {
+	background:#46A4D0;
+	border:1px solid #256E93;
+}
+.header_01 .tab li a:hover, .header_01 .tab li.on a {
+	border-top:4px solid #256E93;
+	color:#3399CC;
+}
+.header_01 .top_nav {
+	background:#2C85B2;
+}
+.header_01 .top_nav li {
+	border-left:1px solid #256E93;
+}
+.header_01 .top_nav li a:hover {
+	background-color:#256E93;
+}*/
+
+/*绿色2*/
+.header_01 {
+	background:#1BB6B8;
+}
+.header_01 .tab li a {
+	background:#35A5AD;
+	border:1px solid #218289;
+}
+.header_01 .tab li a:hover, .header_01 .tab li.on a {
+	border-top:4px solid #26999B;
+	color:#2A9A89;
+}
+.header_01 .top_nav {
+	background:#35A5AD;
+}
+.header_01 .top_nav li {
+	border-left:1px solid #168486;
+}
+.header_01 .top_nav li a:hover {
+	background-color:#168486;
+}

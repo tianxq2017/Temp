@@ -1,0 +1,52 @@
+﻿.tdLeftBotLine {
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-left-style: inset;
+	border-bottom-style: inset;
+	border-left-color: #99CCFF;
+	border-right-color: #336699;
+	border-bottom-color: #666666;
+}
+.tdLine {
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #dddddd;
+}
+.bgLine {
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #333333;
+}
+.titleLine {
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #333333;
+}
+.butLine {
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #3B5888;
+}
+td {
+	font-family: "宋体";
+	font-size: 9pt;
+}
+.tdBorderLine {
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-style: inset;
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-top-color:#666666;
+	border-left-color: #666666;
+	border-right-color: #99CCFF;
+	border-bottom-color: #99CCFF;
+	background-color: #d8edff;
+}
+.selCss
+{
+	width:70px;
+}

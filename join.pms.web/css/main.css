@@ -1,0 +1,187 @@
+body{
+    font-family: "ËÎÌו";
+}
+.bg{
+    width:1500px;
+    height:500px;
+    margin:0 auto;
+    /*background: #ddd;*/
+}
+a{
+    text-decoration: none;
+}
+ul,li,div,h4{
+    margin:0;
+    padding:0;
+}
+.banner{
+    width:100%;
+    height:200px;
+}
+.banner img{
+    width:100%;
+    height:100%;
+}
+.sec{
+    width:100%;
+    height:500PX;
+    margin-top:5px;
+}
+.sec-l{
+    float: left;
+    width:20%;
+    height:100%;
+    background: #e4f3f1;
+}
+.sec-l a{
+    color: rgba(0, 0, 0, 0.73);
+}
+.sec-l .tab {
+    display: block;
+    height: 40px;
+    line-height:40px;
+    /*background:#6c6e74;*/
+    font-weight:bold;
+    font-size:20px;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .2);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #6c6e74; /* Old browsers */
+    background: -moz-linear-gradient(top, #6c6e74 0%, #4b4d51 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6c6e74), color-stop(100%, #4b4d51)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6c6e74 0%, #4b4d51 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6c6e74 0%, #4b4d51 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6c6e74 0%, #4b4d51 100%); /* IE10+ */
+    background: linear-gradient(top, #6c6e74 0%, #4b4d51 100%); /* W3C */
+    -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .1);
+    -moz-box-shadow: 0px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .1);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .1);
+}
+.sec-l .tab:hover, .sec-l div:target .tab {
+    color: #2b3b06;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, .15);
+    background: #a5cd4e; /* Old browsers */
+    background: -moz-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5cd4e), color-stop(100%, #6b8f1a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%); /* IE10+ */
+    background: linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%); /* W3C */
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .3), inset 1px 1px 1px rgba(255, 255, 255, .45);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .3), inset 1px 1px 1px rgba(255, 255, 255, .45);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3), inset 1px 1px 1px rgba(255, 255, 255, .45);
+}
+.sec-l div .content {
+    display: none;
+    padding:0 0 5px 0;
+}
+.sec-l div:target .content {
+    display: block;
+    background:#1c968b;
+}
+.sec-l > div {
+    height: 40px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin:8px 0;
+}
+.sec-l > div li{
+    padding:10px 0 10px 0;
+    text-align: center;
+    margin:2px 0;
+}
+.sec-l > div li:hover{
+    background: rgba(0,0,0,0.6);
+
+}
+.sec-l > div li:hover a{
+    color:red;
+}
+.sec-l > div:target {
+    height:210px;
+}
+
+.sec-r{
+    float: right;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.04);
+}
+.sec-r img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+}
+.sec-r-t{
+    width:100%;
+    margin-top:30px;
+}
+.sec-r-t li{
+    display: inline-block;
+    width:40%;
+    text-align: center;
+}
+.sec-r-t h4{
+    text-align: center;
+    margin-top:5px;
+}
+.sec-r-f{
+    width:100%;
+    margin-top:60px;
+}
+.sec-r-f li{
+    display: inline-block;
+    width:32%;
+    text-align: center;
+}
+.sec-r h4{
+    text-align: center;
+    margin-top:5px;
+}
+.sec-r h4:hover{
+    color:Red;
+}
+.sec-r a{
+    color:#5D5F65;
+}
+ul{
+    list-style:none;
+}
+
+
+.nav{
+    background:#1c968b;
+    height:30px;
+    line-height:45px;
+    color:#fff;
+    text-align: right;
+    padding-right:20px;
+}
+.nav li{
+    display: inline-block;
+    font-size:14px;
+    padding:0 3px;
+}
+.nav li a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+}
+.nav li a:hover{
+    color:#F5D603;
+}
+.nav li img{
+    width:18px;
+    height:18px;
+    display: inline-block;
+    position: relative;
+    top:3px;left:0;
+}

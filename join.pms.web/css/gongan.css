@@ -1,0 +1,59 @@
+body {	margin-left: 0px;	margin-top: 0px;	margin-right: 0px;	margin-bottom: 0px;	background-image: url();	background-repeat:no-repeat;}
+
+/* 切换风格要改动的地方 */
+.topbg {background-image:url(/images/topbg-b.jpg)}
+.leftbg {background-image:url(/images/leftbg-b.jpg);background-position:bottom;}
+.left01 {background-image:url(/images/left01-b.jpg);background-position:bottom;}
+.leftcaidanbg01 {background-image:url(/images/leftcaidanbg01-b.jpg);background-position:bottom;}
+.leftcaidanbg02 {background-image:url(/images/leftcaidanbg02-b.jpg);background-position:bottom;}
+.dibg {background-image:url(/images/dibg-b.jpg);background-position:left;}
+.suofangbg {background-image:url(/images/suofangbg-b.jpg);background-position:top; 	background-repeat:no-repeat;  }
+.biaotibg {background-image:url(/images/biaotibg-b.gif);background-position:left;}
+
+
+a:link {	font-size: 12px;	font-weight: lighter;	color: #643F1B;	text-decoration:  none;}
+a:visited {	font-size: 12px;	font-weight: lighter;	color: #643F1B;	text-decoration:  none;}
+a:hover {	font-size: 12px;	font-weight: lighter;	color: #FF3300;	text-decoration: underline;}
+
+.submit6 { background:url(/images/anniubg-b.gif) 0px 0px; border:1px solid #8F5D26; height:26px; font-size:12px; color:#fff; font-weight:bold; padding-top:2px; cursor:pointer;}
+
+
+/* 切换风格要改动的地方 */
+
+
+
+
+a.linkbai:link {	font-size: 12px;	font-weight: lighter;	color: #FFFFFF;	text-decoration: none;}
+a.linkbai:visited {	font-size: 12px;	font-weight: lighter;	color: #FFFFFF;	text-decoration: none;}
+a.linkbai:hover {	font-size: 12px;	font-weight: lighter;	color: #FFFF00;	text-decoration: underline;}
+
+
+a.linkhuang:link {	font-size: 12px;	font-weight: lighter;	color: #FFFF00;	text-decoration: none;}
+a.linkhuang:visited {	font-size: 12px;	font-weight: lighter;	color: #FFFF00;	text-decoration: none;}
+a.linkhuang:hover {	font-size: 12px;	font-weight: lighter;	color: #FFFFff;	text-decoration: underline;}
+
+a.biaotilink:link {	font-size: 16px;	font-weight: lighter;	color: #0000FF;	text-decoration: underline;}
+a.biaotilink:visited {	font-size: 16px;	font-weight: lighter;	color: #0000FF;	text-decoration: underline;}
+a.biaotilink:hover {	font-size: 16px;	font-weight: lighter;	color: #0000FF;	text-decoration: underline;}
+
+a.biaotilink02:link {	font-size: 16px;	font-weight: lighter;	color: #FF0000;	text-decoration: underline;}
+a.biaotilink02:visited {	font-size: 16px;	font-weight: lighter;	color: #FF0000;	text-decoration: underline;}
+a.biaotilink02:hover {	font-size: 16px;	font-weight: lighter;	color: #FF0000;	text-decoration: underline;}
+
+
+
+.zhengwenbai {	font-size: 12px;	line-height: 20px;	font-weight: lighter;	color: #ffffff;	text-decoration: none;	font-family: Arial, Helvetica, sans-serif;}
+.zhengwenjiacu {	font-size: 12px;	line-height: 20px;	font-weight: bold;	color: #000000;	text-decoration: none;}
+.zhengwen {	font-size: 12px;	line-height: 24px;	font-weight: lighter;	color: #333333;	text-decoration: none;	}
+.zhengwen-time {	font-size: 10px;	line-height: 24px;	font-weight: lighter;	color: #666;	text-decoration: none;	font-family: Arial, Helvetica, sans-serif;}
+.zhengwen14 {	font-size: 14px;	line-height: 24px;	font-weight: lighter;	color: #333333;	text-decoration: none;	}
+
+.biaoti {	font-size: 14px;	line-height: 20px;	font-weight: bold;	color: #333333;	text-decoration: none;}
+.biaotihong {	font-size: 14px;	line-height: 20px;	font-weight: bold;	color: #FF3300;	text-decoration: none;}
+.biaotihuang {	font-size: 14px;	line-height: 20px;	font-weight: bold;	color: #FFff00;	text-decoration: none;}
+.biaotibai {	font-size: 14px;	line-height: 20px;	font-weight: bold;	color: #FFFFFF;	text-decoration: none;}
+.biaotilan {	font-size: 14px;	line-height: 24px;	font-weight: bold;	color: #244A98;	text-decoration: none;}
+.biaoti24 {	font-size: 24px;	line-height: 40px;	font-weight: bold;	color: #000000;}
+.biaoti12 {	font-size: 12px;	line-height: 24px;	font-weight: lighter;	color: #999999;	text-decoration: none;}
+
+.shurukuang {	background-color: #FFFFFF;	border-top-style: none;	border-right-style: none;	border-bottom-style: solid;	border-left-style: none;	border-top-width: 0px;	border-right-width: 0px;	border-bottom-width: 1px;	border-left-width: 0px;	border-bottom-color: #999999;}

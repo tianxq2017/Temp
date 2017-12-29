@@ -1,0 +1,23 @@
+a,a:hover{border:none;text-decoration:none;}
+img,a img{border:none;}
+
+
+.zoomed > .container{-webkit-filter:blur(3px);filter:blur(3px);}
+.container{
+    width:860px;
+    margin:20px auto;
+}
+.gallery{
+    list-style-type:none;
+    float:left;}
+.gallery li{
+   display:inline-block;
+    margin:10px;
+    width:80px;
+    height:80px;}
+.gallery li:nth-child(6n){
+    padding-right:0;
+}
+.gallery li a,.gallery li img {
+    float: left;
+}

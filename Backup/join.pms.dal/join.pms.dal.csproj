@@ -1,0 +1,110 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{168061A3-4FC2-49BC-A766-00AB260FC111}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>join.pms.dal</RootNamespace>
+    <AssemblyName>join.pms.dal</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jayrock.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6411e51d1da2afdf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Jayrock.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UNV.Comm.DataBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\UNV.Comm.DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="UNV.Comm.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\UNV.Comm.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizAuditInfo.cs" />
+    <Compile Include="BizWorkFlows.cs" />
+    <Compile Include="Biz_Categories.cs" />
+    <Compile Include="BIZ_Common.cs" />
+    <Compile Include="BIZ_Contents.cs" />
+    <Compile Include="BIZ_Docs.cs" />
+    <Compile Include="BIZ_PersonChildren.cs" />
+    <Compile Include="BIZ_Persons.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CommAjax.cs" />
+    <Compile Include="CommBiz.cs" />
+    <Compile Include="CommPage.cs" />
+    <Compile Include="DataList.cs" />
+    <Compile Include="DataListBiz.cs" />
+    <Compile Include="DataListForCms.cs" />
+    <Compile Include="DataListForUser.cs" />
+    <Compile Include="DataListForUserWap.cs" />
+    <Compile Include="NHC_YCF_FMJL.cs" />
+    <Compile Include="NHS_Child_Base.cs" />
+    <Compile Include="NHS_Child_InoculationPoint.cs" />
+    <Compile Include="NHS_Child_InoculationRecord.cs" />
+    <Compile Include="NHS_Child_JKJC.cs" />
+    <Compile Include="NHS_Child_XsrFs.cs" />
+    <Compile Include="NHS_Hqyxjc.cs" />
+    <Compile Include="NHS_InoculationType.cs" />
+    <Compile Include="NHS_Village.cs" />
+    <Compile Include="NHS_WorkUser.cs" />
+    <Compile Include="NHS_YCF_Base.cs" />
+    <Compile Include="NHS_YCF_CHFS.cs" />
+    <Compile Include="NHS_YCF_CQFS_1.cs" />
+    <Compile Include="NHS_YCF_CQFS_2_13.cs" />
+    <Compile Include="NHS_YCF_FMK.cs" />
+    <Compile Include="NHS_YCF_WP.cs" />
+    <Compile Include="NHS_YiMiaoInfo.cs" />
+    <Compile Include="NHS_YlfnJkjc.cs" />
+    <Compile Include="NHS_YqysJkjc.cs" />
+    <Compile Include="PIS_Persons.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRCode.cs" />
+    <Compile Include="SendMsg.cs" />
+    <Compile Include="SQLFilter.cs" />
+    <Compile Include="SysSeal.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

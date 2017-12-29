@@ -1,0 +1,95 @@
+body {
+	color: #000000;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+.huiz {
+	font-size: 12px;
+	color: #454545;
+}
+.hei {
+	font-size: 12px;
+	color: #000000;
+}
+.f14 {
+	font-size: 14px;
+}
+.f16 {
+	font-size: 16px;
+}
+a{
+font-size: 12px;
+	color: #464646;
+}
+a:link,a:active,a:visited  {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+} 
+
+.mar5{
+margin:5px;
+}
+.marT5{
+margin-top:5px;
+}
+.mar3{
+margin:3px;}
+.pad3{
+padding:3px}
+.padL3{
+padding-left:3px}
+.padT3{
+padding-top:3px}
+.hz {
+	color: #FF0000;
+}
+.duan{
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+	text-indent: 20px;
+	margin: 5px;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+.Lo
+{
+background:url(../images/Lo.jpg) no-repeat;
+width:75px;
+height:28px;
+border:0px;
+}.Ex
+{
+background:url(../images/Ex.jpg) no-repeat;
+width:75px;
+height:28px;
+border:0px;
+}
+.buttonLogin{
+     width:80px;   
+     height:30px;
+     background:url(~/images/sysAdmin/loginBut.gif) no-repeat left top; 
+     border:none; 
+}
+.inputUser{
+     width:250px;   
+     height:22px;
+     border:none; 
+}
+.inputCheckCode{
+     height:22px;
+     border:none; 
+}
+.checkBoxLogin{
+     width:13px;   
+     height:13px;
+     border:none; 
+}

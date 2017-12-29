@@ -1,0 +1,52 @@
+@charset "gb2312";
+/*差异样式*/
+/* header */
+.header_01 {
+    background-image:url(/images/2013_12/08/top_bg.jpg);
+}
+.header_01 .fr, .header_01 .fr li a {
+    background-color: #053F94;
+}
+
+/*right*/
+.left_r_01 .leftbg_r {
+    background-color: #043175;
+}
+.line_t {
+    background-image:url(/images/2013_12/08/ico_05.gif);
+}
+.left_ss_r .ss_r, .left_ss_r .ss_l {
+    background-image:url(/images/2013_12/08/right_lr.gif);
+}
+.left_01 .lm_yi:hover a, .left_01 .lm_yi_hover a, .left_01 .lm_er_a a:hover, .left_01 .lm_er_b a:hover, .left_01 .lm_san a:hover {
+	color:#0A5AB3;
+}
+
+/*起始页*/
+.part_12_02 .part_12_02a .part_title p, .part_12_03 .part_title, .part_12_03 .part_12_03a li span, .part_12_03 .color_01 {
+    color: #0A5AB3;
+}
+
+/*内容 列表 页码*/
+#DargTableByYsl th {
+    background-color: #0A5AB3;
+    border-bottom: none;
+}
+.page a:hover, .page .on {
+    border-color: #0A5AB3;
+	background-color: #0A5AB3;
+}
+.submit6 {
+    background-image:url(/images/2013_12/08/gif_10.gif);
+	color:#0A5AB3;
+}
+#ec_bodyZone .submit6 {
+    background-image:url(/images/2013_12/08/gif_10.gif);
+	color:#FFFFFF;
+}
+#DargTableByYsl .edit {
+    background-image:url(/images/2013_12/08/icon-edit.gif);
+}
+#DargTableByYsl .del {
+    background-image:url(/images/2013_12/08/icon-del.gif);
+}

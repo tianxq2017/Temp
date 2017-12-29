@@ -1,0 +1,128 @@
+.body {
+	PADDING-BOTTOM: 0px; MARGIN: auto; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.f12ls {
+	COLOR: #579d3f; FONT-SIZE: 12px
+}
+
+TABLE {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px
+}
+TR {
+	FONT-SIZE: 12px
+}
+TH {
+	FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.f24 {
+	FONT-FAMILY: Microsoft YaHei,arial; COLOR: #bbe57a; FONT-SIZE: 24px
+}
+.f12 {
+	COLOR: #ffffff; FONT-SIZE: 12px
+}
+.ccc {
+	COLOR: #cccccc; FONT-SIZE: 14px
+}
+.border-B {
+	BACKGROUND: url(../images/dou.gif) repeat-x left bottom
+}
+.f20 {
+	FONT-FAMILY: Microsoft YaHei,arial; COLOR: #ffffff; FONT-SIZE: 20px
+}
+.lanc {
+	COLOR: #02609e; FONT-SIZE: 12px
+}
+A.lanc:link {
+	COLOR: #02609e; FONT-SIZE: 12px
+}
+A.lanc:visited {
+	COLOR: #02609e; FONT-SIZE: 12px
+}
+A.lanc:hover {
+	COLOR: #ffffff; FONT-SIZE: 12px
+}
+.bb {
+	COLOR: #ffffff; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+A.bb:link {
+	COLOR: #ffffff; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+A.bb:visited {
+	COLOR: #ffffff; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+A.bb:hover {
+	COLOR: #ffffff; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+.wzh22 {
+	LINE-HEIGHT: 22px
+}
+.padL46 {
+	PADDING-LEFT: 46px
+}
+.f122 {
+	COLOR: #70b557; FONT-SIZE: 12px
+}
+.f16 {
+	COLOR: #3f762c; FONT-SIZE: 16px
+}
+.hh9 {
+	COLOR: #999999; FONT-SIZE: 12px
+}
+A.hh9:link {
+	COLOR: #999999; FONT-SIZE: 12px
+}
+A.hh9:visited {
+	COLOR: #999999; FONT-SIZE: 12px
+}
+A.hh9:hover {
+	COLOR: #cc0001; FONT-SIZE: 12px
+}
+.hse {
+	COLOR: #38462a; FONT-SIZE: 13px
+}
+A.hse:link {
+	COLOR: #38462a; FONT-SIZE: 13px
+}
+A.hse:visited {
+	COLOR: #38462a; FONT-SIZE: 13px
+}
+A.hse:hover {
+	COLOR: #cc0001; FONT-SIZE: 13px
+}
+.lse {
+	COLOR: #336633; FONT-SIZE: 14px
+}
+A.lse:link {
+	COLOR: #336633; FONT-SIZE: 14px
+}
+A.lse:visited {
+	COLOR: #336633; FONT-SIZE: 14px
+}
+A.lse:hover {
+	COLOR: #cc0001; FONT-SIZE: 14px
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+
+.AddLine {
+	FONT-SIZE: 14px
+}
+.AddInputCss {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; LINE-HEIGHT: 24px; HEIGHT: 25px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.bld12{
+	font-weight:bold;
+	}

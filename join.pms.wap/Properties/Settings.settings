@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="join.pms.wap.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AreWeb_OnlineCertificate_Wap_iSvrs_DALSvrs" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://218.30.67.160:8051/DALSvrs.asmx</Value>
+    </Setting>
+    <Setting Name="join_pms_wap_iSvrs_DALSvrs" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:6430/DALSvrs.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

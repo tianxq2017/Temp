@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>日期选择</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<script language="javascript" src="Calendar.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function fload()
+{
+    var args = window.dialogArguments;
+    fPopCalendar(document.getElementById("txtDateTime"), document.getElementById("txtDateTime"),args);
+}
+function fkeydown()
+{
+    if(event.keyCode==27){
+        event.returnValue = null;
+        window.returnValue = null;
+        window.close();
+    }
+}
+document.onkeydown=fkeydown;
+</script>
+</head>
+<body onload="fload()">
+<input id="txtDateTime" style="DISPLAY: none">
+</BODY>
+</html>

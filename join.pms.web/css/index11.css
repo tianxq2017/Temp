@@ -1,0 +1,9 @@
+@charset "gb2312";
+/*²îÒìÑùÊ½*/
+/* header */
+.header_01 {
+    background-image:url(/images/2013_12/11/top_bg.jpg);
+}
+.header_01 .fr, .header_01 .fr li a {
+    background-color: #0B7AB0;
+}

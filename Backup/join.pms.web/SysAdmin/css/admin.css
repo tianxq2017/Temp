@@ -1,0 +1,74 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px;
+	background-color:#fff; background-image:url(../images/bg.jpg); background-position:top; background-repeat:repeat-x;
+}
+.huiz {
+	FONT-SIZE: 12px; COLOR: #454545
+}
+.hei {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+.f16 {
+	FONT-SIZE: 16px
+}
+A {
+	FONT-SIZE: 12px; COLOR: #464646
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.mar5 {
+	MARGIN: 5px
+}
+.marT5 {
+	MARGIN-TOP: 5px
+}
+.mar3 {
+	MARGIN: 3px
+}
+.pad3 {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.padL3 {
+	PADDING-LEFT: 3px
+}
+.padT3 {
+	PADDING-TOP: 3px
+}
+.hz {
+	COLOR: #ff0000
+}
+.duan {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 5px; COLOR: #000000; TEXT-INDENT: 20px; LINE-HEIGHT: 18px; PADDING-TOP: 5px; LETTER-SPACING: 1px; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.Lo {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(../images/Lo.jpg) no-repeat; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 75px; HEIGHT: 28px; BORDER-RIGHT-WIDTH: 0px
+}
+.Ex {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(../images/Ex.jpg) no-repeat; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 75px; HEIGHT: 28px; BORDER-RIGHT-WIDTH: 0px
+}
+.buttonLogin {
+	BACKGROUND: url(~/images/sysAdmin/loginBut.gif) no-repeat left top; WIDTH: 80px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 30px; BORDER-BOTTOM-STYLE: none
+}
+.inputUser {
+	WIDTH: 165px;  HEIGHT: 26px;border:1px #cccccc solid;
+}
+.inputCode {
+	WIDTH: 95px;  HEIGHT: 26px; border:1px #cccccc solid;
+}
+.checkBoxLogin {
+	WIDTH: 13px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 13px; BORDER-BOTTOM-STYLE: none
+}
+.font{color:#000;font-size:14px;line-height:23px}

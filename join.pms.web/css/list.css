@@ -1,0 +1,79 @@
+﻿/**功能按钮**/
+.gnbtn{background:url(../images/icon_bg.gif) no-repeat center bottom;height:26px;line-height:26px;color:#000000;text-decoration:none;padding-top:1px;}
+
+.gnbtn a{color:#000000;text-decoration:none;}
+.gnbtn a:hover{color:#be3301;text-decoration:none;}
+.gnbtn2{background:url(../images/icon_bg2.gif) no-repeat center bottom;height:26px;line-height:26px;padding-top:1px;}
+.gnbtn2 a{color:#000000;text-decoration:none;}
+.gnbtn2 a:hover{color:#be3301;text-decoration:none;}
+/**右侧**/
+.rnavbg{background:#D0E2D4 url(../images/rnav01.jpg) no-repeat left bottom;height:24px;line-height:24px;}
+.rnav01{color:#294331;font-size:12px;line-height:1.5;text-decoration:none;}
+.rnav01 a{color:#294331;font-size:12px;line-height:1.5;text-decoration:none;}
+.rnav01 a:hover{color:#294331;font-size:12px;line-height:1.5;text-decoration:none;}
+.rightb{/*padding-left:8px;padding-right:8px;*/padding-bottom:8px;}
+.rbtn01{background:url(../images/button03.jpg) no-repeat center center;font-size:12px;font-weight:bold;color:#ffffff;text-decoration:none;}
+.rbtn01 a{background:url(../images/button03.jpg) no-repeat center center;font-size:12px;font-weight:bold;color:#ffffff;text-decoration:none;}
+.rbtn01 a:hover{background:url(../images/button03.jpg) no-repeat center center;font-size:12px;font-weight:bold;color:#ffffcc;text-decoration:none;}
+.sinput{border-left:1px solid #464646;border-top:1px solid #464646;border-bottom:1px solid #FEFDF9;border-right:1px solid #FEFDF9;height:16px;line-height:16px;font-size:12px;color:#333;}
+.cdate{color:#cccccc;font-size:12px;}
+.xuxian01{background:url(../images/xuxian01.gif) repeat-x left bottom;}
+/**列表页**/
+.clistborder{border:1px solid #afd661; padding: 5px 20px 0;}
+.fb input{border:1px solid  #afd661;color:#333;font-size:12px;}
+.page{color:#006634;font-size:12px;text-decoration:none;line-height:1.5;}
+.page a{color:#006634;font-size:12px;text-decoration:none;line-height:1.5;}
+.page a:hover{color:#006634;font-size:12px;text-decoration:underline;line-height:1.5;}
+.page input{border:1px solid  #afd661;color:#333;font-size:12px;}
+
+.cmodify01{color:#006634;font-size:12px;text-decoration:none;}
+.cmodify01 a{color:#006634;font-size:12px;text-decoration:none;}
+.cmodify01 a:hover{color:#006634;font-size:12px;text-decoration:underline;}
+
+.cmodify02{color:#006634;font-size:12px;text-decoration:none;}
+.cmodify02 a{color:#006634;font-size:12px;text-decoration:none;}
+.cmodify02 a:hover{color:#006634;font-size:12px;text-decoration:underline;}
+/**用户管理**/
+.cuserinput{border:1px solid #006634;height:19px;color:#006634;line-height:19px;background:#F4FBFA;}
+.cusersubmit{border:1px solid #7AC584;background:url(/images/gif_03.gif) repeat-x;height:22px;color:#407211;line-height:22px;width:70px; font-weight:bold; cursor:pointer; margin:0; padding:0;}
+.cuserreset{border-left:1px solid #7AC584;border-top:1px solid #7AC584;border-right:1px solid #7AC584;border-bottom:1px solid #7AC584;background:url(../images/csubmit.jpg) repeat-x left center;height:22px;color:#C14418;line-height:22px;width:70px;padding:1px;font-weight:bold;}
+select{
+    border-right: #000000 1px solid;
+    border-top: #ffffff 1px solid;
+    font-size: 12px; /*www.52css.com*/
+    border-left: #ffffff 1px solid;
+    color:#003366;
+    border-bottom: #000000 1px solid;
+    background-color: #f4f4f4;
+	height:18px;
+}
+.multieditbox{
+    background:#F4FBFA;
+    border-bottom:  #006634 1px solid;
+    border-left:  #006634 1px solid;
+    border-right: #006634 1px solid;
+    border-top:  #006634 1px solid;
+    color:#006634;
+    cursor: text;
+    font-family: "宋体";
+    font-size: 12px;
+    padding: 1px; /*www.52css.com*/
+}
+/**搜索页面**/
+.csborder{border:1px solid #99c1ac;background:#ffffff;margin:10px;}
+
+.csborder2{border:1px solid #cfcfcf;background:#ffffff;padding:5px;color:#333;font-size:12px;}
+.cstext{color:#006634;font-size:14px;line-height:1.5;text-decoration:none;}
+.csinput{border:1px solid #cccccc;height:17px;color:#333;line-height:17px;background:#F9FDFC;font-size:12px;}
+#funcButtons{
+	padding-bottom:2px;
+}
+#funcButtons img{
+	cursor:pointer;
+	border:1px solid #FFF;
+}
+#funcButtons img:hover{
+	border:1px solid #E0E0E0;
+}
+
+
