@@ -220,6 +220,13 @@
     <Content Include="BizInfo\FundingPayInfoView.aspx" />
     <Content Include="BizInfo\BasisDocument.aspx" />
     <Content Include="BizInfo\BasisDocumentView.aspx" />
+    <Content Include="Chart\ProjectInfoForMonth.aspx" />
+    <Content Include="Chart\Scripts\barrierfree.js" />
+    <Content Include="Chart\Scripts\datectrl.js" />
+    <Content Include="Chart\Scripts\echarts\echarts.js" />
+    <Content Include="Chart\Scripts\jquery-1.8.2.js" />
+    <Content Include="Chart\Scripts\jquery1.7.2.js" />
+    <Content Include="Chart\Scripts\jsdate.js" />
     <Content Include="css\admin.css" />
     <Content Include="css\index1.css" />
     <Content Include="css\left.css" />
@@ -661,6 +668,13 @@
     </Compile>
     <Compile Include="BizInfo\BasisDocumentView.aspx.designer.cs">
       <DependentUpon>BasisDocumentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\ProjectInfoForMonth.aspx.cs">
+      <DependentUpon>ProjectInfoForMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chart\ProjectInfoForMonth.aspx.designer.cs">
+      <DependentUpon>ProjectInfoForMonth.aspx</DependentUpon>
     </Compile>
     <Compile Include="CmsList.aspx.cs">
       <DependentUpon>CmsList.aspx</DependentUpon>
